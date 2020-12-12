@@ -6,14 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "account" : "npx hardhat accounts",
-    "compile" : "npx hardhat compile",
+    "account": "npx hardhat accounts",
+    "compile": "npx hardhat compile",
     "test": "npx hardhat test",
-    "deploy" : "npx hardhat run ./script/deploy.js",
-    "node" : "npx hardhat node",
-    "deploy_localhost" : "npx hardhat run ./script/deploy.js --network localhost"
+    "deploy": "npx hardhat run ./script/deploy.js",
+    "node": "npx hardhat node",
+    "deploy_localhost": "npx hardhat run ./script/deploy.js --network localhost"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^3.3.0",
     "classnames": "^2.2.6",
     "next": "10.0.1",
     "react": "17.0.1",
@@ -28,13 +29,13 @@
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.1",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
+    "@zeit/next-source-maps": "^0.0.3",
     "chai": "^4.2.0",
     "ethereum-waffle": "^3.2.1",
     "ethers": "^5.0.24",
     "hardhat": "^2.0.4",
-    "@zeit/next-css": "^1.0.1",
-    "@zeit/next-less": "^1.0.1",
-    "@zeit/next-source-maps": "^0.0.3",
     "less": "^3.12.2",
     "next-i18next": "^7.0.1",
     "next-images": "^1.6.2"

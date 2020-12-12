@@ -1606,6 +1606,11 @@
   dependencies:
     mkdirp "^1.0.4"
 
+"@openzeppelin/contracts@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.npm.taobao.org/@openzeppelin/contracts/download/@openzeppelin/contracts-3.3.0.tgz#ffdb693c5c349fc33bba420248dd3ac0a2d7c408"
+  integrity sha1-/9tpPFw0n8M7ukICSN06wKLXxAg=
+
 "@portis/web3-provider-engine@1.1.2":
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/@portis/web3-provider-engine/download/@portis/web3-provider-engine-1.1.2.tgz#97f383156ea6b70fba69ae93a945fdd94159b1ba"

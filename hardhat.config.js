@@ -17,32 +17,53 @@ task("accounts", "Prints the list of accounts", async () => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  defaultNetwork: "hardhat",
+  defaultNetwork: 'hardhat',
   networks: {
-    hardhat: {
-    },
+    hardhat: {},
     rinkeby: {
-      url: "https://rinkeby.infura.io/v3/3970ae72d3db40f6a6dfad8544b4da1c",
-      accounts: []
-    }
+      url: 'https://rinkeby.infura.io/v3/3970ae72d3db40f6a6dfad8544b4da1c',
+      accounts: [],
+    },
   },
   solidity: {
-    version: "0.7.3",
-    settings: {
-      optimizer: {
-        enabled: true,
-        runs: 200
+    compilers: [
+      {
+        version: '0.7.3',
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
+      {
+        version: '0.5.16',
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
+      {
+        version: '0.4.24',
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
       }
-    }
+    ],
   },
   paths: {
-    sources: "./contracts",
-    tests: "./test",
-    cache: "./cache",
-    artifacts: "./artifacts"
+    sources: './contracts',
+    tests: './test',
+    cache: './cache',
+    artifacts: './artifacts',
   },
   mocha: {
-    timeout: 20000
-  }
-};
+    timeout: 20000,
+  },
+}
 

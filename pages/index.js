@@ -1,15 +1,15 @@
-import Head from "next/head";
-import { useEffect } from "react";
-import useWallet from "use-wallet";
-import { withTranslation } from "../i18n";
-import HeaderFooter from "../layout/HeaderFooter";
-import classNames from "classnames/bind";
-import styles from "../styles/Home.less";
-const cx = classNames.bind(styles);
-import Web3 from 'web3';
+import Head from 'next/head'
+import { useEffect } from 'react'
+import useWallet from 'use-wallet'
+import { withTranslation } from '../i18n'
+import HeaderFooter from '../layout/HeaderFooter'
+import classNames from 'classnames/bind'
+import styles from '../styles/Home.less'
+const cx = classNames.bind(styles)
+import Web3 from 'web3'
 
 const Home = ({ t }) => {
-  const { account, ethereum } = useWallet();
+  const { account, ethereum } = useWallet()
 
   //  const web3 = new Web3(ethereum)
   //  const ABI = [ { "inputs": [], "name": "getMsgArr", "outputs": [ { "internalType": "string[]", "name": "", "type": "string[]" } ], "stateMutability": "view", "type": "function" }, { "inputs": [ { "internalType": "string[]", "name": "strs", "type": "string[]" } ], "name": "setMsgArr", "outputs": [], "stateMutability": "nonpayable", "type": "function" } ]
@@ -32,22 +32,23 @@ const Home = ({ t }) => {
   return (
     <HeaderFooter>
       <Head>
-        <title>{t("title")}</title>
+        <title>{t('title')}</title>
       </Head>
       <div className={styles.wrapper}>
         <div className={styles.slogan}>
           <p>
-            The <b>Phoenix.link</b> is a automated swap protocol for Liquidity Providers on Ethereum.
+            The <b>Phoenix.link</b> is a automated swap protocol for Liquidity
+            Providers on Ethereum.
           </p>
           <a>Launch App ↗</a>
         </div>
-         <div className={styles.content}>
+        <div className={styles.content}>
           <h1>What is Phoenix.link?</h1>
           <div className={styles.pool}>
             <ul className={styles.pool_content}>
-                <li>123</li>
-                <li>123</li>
-                <li>123</li>
+              <li>123</li>
+              <li>123</li>
+              <li>123</li>
             </ul>
           </div>
         </div>
@@ -79,7 +80,10 @@ const Home = ({ t }) => {
                 <span>
                   <h1>ETH-MOMO LP Pool</h1>
                   <h2>SWAP ETH-MOMO LP</h2>
-                  <h3>0.00000<img src="https://index-dao.s3.amazonaws.com/eth-dpi.svg"/></h3>
+                  <h3>
+                    0.00000
+                    <img src="https://index-dao.s3.amazonaws.com/eth-dpi.svg" />
+                  </h3>
                   <h4>Staked ETH/MOMO Uniswap LP Tokens</h4>
                   <h3>55.33% APY</h3>
                   <h4>(Unstable)</h4>
@@ -88,14 +92,22 @@ const Home = ({ t }) => {
                   <dl className={styles.btns}>
                     <dt>
                       <p>
-                      <s><button className={styles.claim}>Claim</button></s>
-                      <b></b>
-                      <s><button className={styles.stake}>Approve & Stake</button></s>
+                        <s>
+                          <button className={styles.claim}>Claim</button>
+                        </s>
+                        <b></b>
+                        <s>
+                          <button className={styles.stake}>
+                            Approve & Stake
+                          </button>
+                        </s>
                       </p>
                     </dt>
                     <dt>
-                       <p>
-                      <button disabled className={styles.withdraw}>Unstake & Claim</button>
+                      <p>
+                        <button disabled className={styles.withdraw}>
+                          Unstake & Claim
+                        </button>
                       </p>
                     </dt>
                   </dl>
@@ -105,7 +117,10 @@ const Home = ({ t }) => {
                 <span>
                   <h1>ETH-MOMO LP Pool</h1>
                   <h2>SWAP ETH-MOMO LP</h2>
-                  <h3>0.00000<img src="https://index-dao.s3.amazonaws.com/eth-dpi.svg"/></h3>
+                  <h3>
+                    0.00000
+                    <img src="https://index-dao.s3.amazonaws.com/eth-dpi.svg" />
+                  </h3>
                   <h4>Staked ETH/MOMO Uniswap LP Tokens</h4>
                   <h3>55.33% APY</h3>
                   <h4>(Unstable)</h4>
@@ -114,14 +129,22 @@ const Home = ({ t }) => {
                   <dl className={styles.btns}>
                     <dt>
                       <p>
-                      <s><button className={styles.claim}>Claim</button></s>
-                      <b></b>
-                      <s><button className={styles.stake}>Approve & Stake</button></s>
+                        <s>
+                          <button className={styles.claim}>Claim</button>
+                        </s>
+                        <b></b>
+                        <s>
+                          <button className={styles.stake}>
+                            Approve & Stake
+                          </button>
+                        </s>
                       </p>
                     </dt>
                     <dt>
-                       <p>
-                      <button disabled className={styles.withdraw}>Unstake & Claim</button>
+                      <p>
+                        <button disabled className={styles.withdraw}>
+                          Unstake & Claim
+                        </button>
                       </p>
                     </dt>
                   </dl>
@@ -131,7 +154,10 @@ const Home = ({ t }) => {
                 <span>
                   <h1>ETH-MOMO LP Pool</h1>
                   <h2>SWAP ETH-MOMO LP</h2>
-                  <h3>0.00000<img src="https://index-dao.s3.amazonaws.com/eth-dpi.svg"/></h3>
+                  <h3>
+                    0.00000
+                    <img src="https://index-dao.s3.amazonaws.com/eth-dpi.svg" />
+                  </h3>
                   <h4>Staked ETH/MOMO Uniswap LP Tokens</h4>
                   <h3>55.33% APY</h3>
                   <h4>(Unstable)</h4>
@@ -140,14 +166,22 @@ const Home = ({ t }) => {
                   <dl className={styles.btns}>
                     <dt>
                       <p>
-                      <s><button className={styles.claim}>Claim</button></s>
-                      <b></b>
-                      <s><button className={styles.stake}>Approve & Stake</button></s>
+                        <s>
+                          <button className={styles.claim}>Claim</button>
+                        </s>
+                        <b></b>
+                        <s>
+                          <button className={styles.stake}>
+                            Approve & Stake
+                          </button>
+                        </s>
                       </p>
                     </dt>
                     <dt>
-                       <p>
-                      <button disabled className={styles.withdraw}>Unstake & Claim</button>
+                      <p>
+                        <button disabled className={styles.withdraw}>
+                          Unstake & Claim
+                        </button>
                       </p>
                     </dt>
                   </dl>
@@ -158,11 +192,11 @@ const Home = ({ t }) => {
         </div>
       </div>
     </HeaderFooter>
-  );
-};
+  )
+}
 
 Home.getInitialProps = async () => ({
-  namespacesRequired: ["common", "header", "home"],
-});
+  namespacesRequired: ['common', 'header', 'home'],
+})
 
-export default withTranslation("home")(Home);
+export default withTranslation('home')(Home)
