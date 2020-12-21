@@ -13,14 +13,12 @@ describe("Greeter", function() {
   // });
 
   it("Should return the new greeting once it's changed", async function () {
-    const Hello = await hre.ethers.getContractFactory('Hello')
-    const hello = await Hello.deploy()
+    const Licence = await hre.ethers.getContractFactory('Licence')
+    const licence = await Licence.deploy()
 
-    await hello.deployed()
-    expect(await hello.get()).to.equal(1)
-
-    await hello.set(2)
-    expect(await hello.get()).to.equal(2)
+    await licence.deployed()
+    //  expect(await licence.insertCatalogInfo("{\"catalogName\":\"烟草专卖零售许可证\",\"matterCode\":\"\",\"catalogInfoId\":\"ff8080816e1a4bae016e879c6a9601c2\",\"licenseType\":\"烟草专卖零售许可证\",\"catalogType\":\"10\",\"orgCode\":\"省烟草专卖局\",\"modeCode\":\"手工\",\"customCatalogInfos\":[{\"licAttrSource\":\"申请人填报\",\"licAttrDesc\":\"只能中文字母数字组合且最大长度为100\",\"isDictionaries\":\"\",\"isFace\":\"是\",\"name\":\"许可证号\",\"isRequire\":\"是\",\"licAttrStyle\":\"最大长度为d的中文字母数字组合\",\"sensitiveRule\":\"\",\"CustomCatalogInfoID\":\"ff8080816e1a4bae016e879c6ab401c3\",\"licAttrFormat\":\"c..100\"}],\"orgLevel\":\"省部级\",\"catalogDescribe\":\"\",\"matterName\":\"\"}"))
+    //  expect(await licence.getCatalogInfoByUUID('ff8080816e1a4bae016e879c6a9601c2'))
   })
 
 });

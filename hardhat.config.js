@@ -19,10 +19,14 @@ task("accounts", "Prints the list of accounts", async () => {
 module.exports = {
   defaultNetwork: 'hardhat',
   networks: {
-    hardhat: {},
+    localhost: {
+      url: 'http://127.0.0.1:8545',
+    },
     rinkeby: {
       url: 'https://rinkeby.infura.io/v3/3970ae72d3db40f6a6dfad8544b4da1c',
-      accounts: [],
+      accounts: [
+        '711d5290d6065ca1587d61e7cdbb780af389109a8fbaa963092dbf0d4c7d462d',
+      ],
     },
   },
   solidity: {
@@ -53,7 +57,7 @@ module.exports = {
             runs: 200,
           },
         },
-      }
+      },
     ],
   },
   paths: {
