@@ -19,7 +19,6 @@ async function main() {
   const Licence = await hre.ethers.getContractFactory('Licence')
   const licence = await Licence.deploy()
   await licence.deployed()
-  console.log(licence)
   await licence.insertCatalogInfo({
     catalogName: '烟草专卖零售许可证',
     matterCode: '',

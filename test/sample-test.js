@@ -21,4 +21,15 @@ describe("Greeter", function() {
     //  expect(await licence.getCatalogInfoByUUID('ff8080816e1a4bae016e879c6a9601c2'))
   })
 
+  it("Should return the new greeting once it's changed", async function () {
+    const Hello = await hre.ethers.getContractFactory('Hello')
+    const hello = await Hello.deploy()
+
+    await hello.deployed()
+    expect(await hello.get()).to.equal(1)
+
+    await hello.set(2)
+    expect(await hello.get()).to.equal(2)
+  })
+
 });
