@@ -3,6 +3,7 @@ pragma experimental ABIEncoderV2;
 
 import "./openzeppelin-solidity/contracts/math/SafeMath.sol";
 import "./LicenceCatalog.sol";
+import "hardhat/console.sol";
 
 
 contract Licence is LicenceCatalog{
@@ -44,6 +45,7 @@ contract Licence is LicenceCatalog{
             licenses[_license.licenseId].catalogItems.push(_license.catalogItems[i]);
         }
         licenseUUIDArray.push(_license.licenseId);
+        console.log(_license.licenseId,"证件UUID");
         emit CreateLicese(_license);
         return _license;
     }
